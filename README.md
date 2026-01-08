@@ -1,4 +1,5 @@
                               Desafio Técnico Prático – Desenvolvedor(a) Back-End
+                              
 Este desafio consiste no desenvolvimento de uma API REST robusta utilizando Java e o framework Spring Boot. O objetivo principal é gerenciar o controle de patrimônio do NERDS, permitindo operações completas de CRUD (Create, Read, Update, Delete).                              
 
 Tecnologias Utilizadas
@@ -13,6 +14,7 @@ Maven (Gerenciador de dependências)
 
 Configuração do Banco de Dados
 
+
 A aplicação utiliza o PostgreSQL. Para que o sistema funcione corretamente, siga os passos abaixo:
 
 1 - Abra o seu pgAdmin (ou ferramenta de preferência).
@@ -20,6 +22,7 @@ A aplicação utiliza o PostgreSQL. Para que o sistema funcione corretamente, si
 2 - Crie um novo banco de dados chamado "patrimonios" (conforme requisito de conexão inicial).
 
 3 - Certifique-se de que o serviço do Postgres está rodando.
+
 
 Variáveis de Ambiente (.env)
 Copie o arquivo igual ao utilizado no exemplo a seguir, que configura as variáveis de ambiente, configure as credenciais de acordo com a sua instalação local. Se necessário, corrija o arquivo .env com as seguintes propriedades:
@@ -34,11 +37,13 @@ OBS: A porta padrão é 5432. Se você configurou o seu PostgreSQL em uma porta 
 
 IMPORTANTE: SÓ FUNCIONNARÁ SE CONFIGURAR O ARQUIVO ".env" COMO FOI EXPLICADO, POIS FOI CONFIGURADO PARA SER UTILIZADO AS VÁRIAVEIS CONFIGURADAS DESTE ARQUIVO
 
+
 Documentação e Testes (Postman)
 
 Você pode acessar e testar todos os endpoints da API através da nossa coleção pública no Postman:
 
 https://caiorian246810-8166985.postman.co/workspace/f6812a7d-87dc-4cea-829d-1b1acce570e8/documentation/47577494-cf91148a-cc09-490b-95d1-07b7507fd943
+
 
 Endpoints da API
 
@@ -68,6 +73,7 @@ Ex: {  URL=localhost:8080/patrimonio/10
 O excemplo acima significa que o patrimônio de Id = 10 receberá as atualizações recebidas pelo body.
     
 6 - Método DELETE	URL=localhost:8080/patrimonio/{id} ela remove permanentemente um patrimônio do banco de dados recebendo o Id pela URL.
+
 
 Como executar
 
