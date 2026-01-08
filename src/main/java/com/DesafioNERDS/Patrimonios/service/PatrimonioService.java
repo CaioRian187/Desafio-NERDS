@@ -48,10 +48,6 @@ public class PatrimonioService {
     public Patrimonio updatePatrimonio(Patrimonio patrimonio){
         Patrimonio newPatrimonio = findById(patrimonio.getId());
 
-        if (patrimonioRepository.existsByNumeroSerie(patrimonio.getNumeroSerie())){
-            throw new DuplicateException("Já existe um patrimônio cadastrato com o número de série: " + patrimonio.getNumeroSerie());
-        }
-
         newPatrimonio.setNome(patrimonio.getNome());
         newPatrimonio.setTipo(patrimonio.getTipo());
         newPatrimonio.setNumeroSerie(patrimonio.getNumeroSerie());
